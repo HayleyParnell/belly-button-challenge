@@ -31,3 +31,6 @@ Complete the following steps:
 6.  Update all the plots when a new sample is selected. Additionally, you are welcome to create any layout that you would like for your dashboard. 
 
 7. Deploy your app to a free static page hosting service, such as GitHub Pages. Submit the links to your deployment and your GitHub repo. 
+
+***This source used to create the functioning drop down**
+https://canvasjs.com/docs/charts/basics-of-creating-html5-chart/
