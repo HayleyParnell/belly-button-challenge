@@ -39,6 +39,27 @@ d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1
     Plotly.newPlot("bar", barData, barLayout);
 
     // Bubble chart
+    var bubbleData = [{
+      x: selectedSample.otu_ids,
+      y: selectedSample.sample_values,
+      text: selectedSample.otu_labels,
+      mode: "markers",
+      marker: {
+        size: selectedSample.sample_values,
+        color: selectedSample.otu_ids,
+        colorscale: "Earth"
+      }
+    }];
+
+    var bubbleLayout = {
+      title: "OTU Bubble Chart",
+      xaxis: { title: "OTU ID" },
+      yaxis: { title: "Sample Values" }
+    };
+
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+  }
+
 
 
   // Initialize the dashboard
