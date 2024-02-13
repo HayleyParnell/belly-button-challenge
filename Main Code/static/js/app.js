@@ -88,6 +88,13 @@ d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1
 
   // Initialize the dashboard
   init();
+  
+
+  // Function to change the data with the drop down 
+  d3.select("#selDataset").on("change", function() {
+    var newSample = d3.select(this).property("value");
+    optionChanged(newSample);
+  });
 });
 
 
